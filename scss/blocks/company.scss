@@ -1,0 +1,16 @@
+.company {
+    margin: 0 auto;
+    max-width: 766px;
+    margin-bottom: 125px;
+    &__info {
+        margin-bottom: 30px;
+        h3 {
+            @include h3(36px, $text-color, center);
+            margin-bottom: 30px;
+        }
+        p {
+            @include p(19px, $text-color, center);
+            margin-bottom: 60px;
+        }
+    }
+}

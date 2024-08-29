@@ -1,0 +1,86 @@
+.jobs {
+    padding-top: 108px;
+    background-image: url(/assets/img/wave\1\(1\).png);
+    &__container {
+        margin: 0 auto;
+        max-width: 1110px;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    &__title {
+        h3 {
+            @include h3(36px, $text-color, start);
+        }
+        p {
+            @include p(19px, $text-color, start);
+            margin-top: 17px;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        height: 44px;
+        width: 80px;
+        background-color: $gray;
+        border-radius: 10px;
+        cursor: pointer;
+
+        &__item1 {
+            @include item(10px 0 0 10px);
+        }
+        &__item2 {
+            @include item(0 10px 10px 0);
+        }
+    }
+
+    &__list {
+        margin-top: 84px;
+        display: flex;
+        gap: 30px;
+        &__item {
+            padding: 24px 39px;
+            width: 255px;
+            height: 279px;
+            border: 1px solid $gray;
+            border-radius: 10px;
+            h3 {
+                font-size: 21px;
+                font-weight: 600;
+                line-height: 32px;
+                color: $text-color;
+                margin-top: 16px;
+            }
+            p {
+                @include p(15px, $text-color, start);
+                margin-top: 5px;
+            }
+        }
+
+        &__subtitle1 {
+            @include time($green);
+        }
+        &__subtitle2 {
+            @include time($blue);
+        }
+        &__subtitle3 {
+            @include time($green);
+        }
+        &__subtitle4 {
+            @include time($red);
+        }
+
+
+        &__logo {
+          margin-bottom: 34px;
+          display: flex;
+          gap: 5px;
+          align-items: center;
+        }
+    }
+}
