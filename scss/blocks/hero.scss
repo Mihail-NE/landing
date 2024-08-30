@@ -44,12 +44,15 @@
     }
 
     &__content {
-        position: absolute;
+        // position: absolute;
+        padding: 100px 100px;
+
+        width: fit-content;
         display: flex;
         flex-direction: column;
         gap: 30px;
-        top: 203px;
-        left: 245px;
+        // top: 203px;
+        // left: 245px;
 
         &__title {
             font-size: 60px;
@@ -103,7 +106,6 @@
             border-radius: 4px;
             font-size: 15px;
             font-weight: 400;
-            line-height: 17.4px;
             color: $text-color;
         }
 

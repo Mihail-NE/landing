@@ -123,12 +123,11 @@ body {
   color: #473BF0;
 }
 .hero__content {
-  position: absolute;
+  padding: 100px 100px;
+  width: fit-content;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  top: 203px;
-  left: 245px;
 }
 .hero__content__title {
   font-size: 60px;
@@ -182,7 +181,6 @@ body {
   border-radius: 4px;
   font-size: 15px;
   font-weight: 400;
-  line-height: 17.4px;
   color: #161C2D;
 }
 .hero__form__btn {
@@ -621,6 +619,140 @@ body {
   color: #161C2D;
   letter-spacing: -0.5px;
   font-weight: 600;
+}
+
+.subscribe {
+  margin: 120px auto;
+  max-width: 502px;
+}
+.subscribe__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.subscribe__icon {
+  display: flex;
+  justify-content: center;
+}
+.subscribe__title h3 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  color: #161C2D;
+}
+.subscribe__title p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: #161C2D;
+  text-align: center;
+  opacity: 0.7;
+  margin-top: 20px;
+}
+.subscribe__form {
+  position: relative;
+}
+.subscribe__form input {
+  width: 85%;
+  padding: 22px 38px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #161C2D;
+  border: 1px solid #E7E9ED;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+.subscribe__form button {
+  position: absolute;
+  left: 327px;
+  top: 7px;
+  padding: 8.5px 50px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  background-color: #473BF0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.subscribe__form p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: #161C2D;
+  text-align: center;
+  opacity: 0.7;
+  margin-top: 25px;
+}
+
+.footer {
+  background-color: #161C2D;
+  padding-top: 122px;
+  padding-bottom: 128px;
+}
+.footer__container {
+  display: flex;
+  gap: 101px;
+  margin: 0 auto;
+  width: fit-content;
+}
+.footer__info {
+  max-width: 274px;
+}
+.footer__info h3 {
+  font-family: Rubik, sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #fff;
+}
+.footer__info p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  text-align: start;
+  opacity: 0.7;
+  margin-top: 36px;
+}
+.footer__icons {
+  margin-top: 44px;
+  display: flex;
+  gap: 10px;
+}
+.footer__social {
+  display: flex;
+  gap: 80px;
+}
+.footer__social__item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer__social__item p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+  text-align: start;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+.footer__social__item a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 300;
+  transition: all 0.3s ease;
+}
+.footer__social__item a:hover {
+  color: #68D585;
 }
 
 /*# sourceMappingURL=style.css.map */
