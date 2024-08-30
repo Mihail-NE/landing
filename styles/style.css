@@ -425,7 +425,9 @@ body {
 
 .jobs {
   padding-top: 108px;
-  background-image: url(/assets/img/wave\1 \(1\).png);
+  background-image: url(/assets/img/wave\ 1\(1\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .jobs__container {
   margin: 0 auto;
@@ -492,14 +494,21 @@ body {
   gap: 30px;
 }
 .jobs__list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
   padding: 24px 39px;
   width: 255px;
   height: 279px;
   border: 1px solid #E7E9ED;
   border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 141px;
 }
 .jobs__list__item h3 {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 32px;
   color: #161C2D;
@@ -514,6 +523,9 @@ body {
   text-align: start;
   opacity: 0.7;
   margin-top: 5px;
+}
+.jobs__list__item:hover {
+  border: 1px solid #68D585;
 }
 .jobs__list__subtitle1 {
   font-size: 13px;
@@ -536,10 +548,79 @@ body {
   color: #F64B4B;
 }
 .jobs__list__logo {
-  margin-bottom: 34px;
+  width: 100%;
   display: flex;
   gap: 5px;
   align-items: center;
+}
+
+.news {
+  padding-top: 97px;
+  background-color: #f4f7fa;
+  padding-bottom: 140px;
+}
+.news__info h3 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: center;
+  color: #161C2D;
+}
+.news__info p {
+  margin-top: 17px;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: #161C2D;
+  text-align: center;
+  opacity: 0.7;
+}
+.news__list {
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-top: 65px;
+  display: flex;
+  gap: 25px;
+  cursor: pointer;
+}
+.news__list__container {
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  max-width: 350px;
+  max-height: 450px;
+  box-shadow: 0px 34px 33px -23px rgba(22, 28, 45, 0.1295);
+  transition: all 0.3s ease;
+}
+.news__list__container:hover {
+  border: 1px solid #E7E9ED;
+}
+.news__list__image {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.news__list__image img {
+  border-radius: 10px 10px 0 0;
+}
+.news__list__title {
+  padding: 22px 32px;
+}
+.news__list__title p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  color: #161C2D;
+  text-align: start;
+  opacity: 0.7;
+}
+.news__list__title h6 {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #161C2D;
+  letter-spacing: -0.5px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

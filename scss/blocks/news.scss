@@ -1,0 +1,60 @@
+.news {
+    padding-top: 97px;
+    background-color: #f4f7fa;
+    padding-bottom: 140px;
+    &__info {
+        h3 {
+            @include h3(36px, $text-color, center);
+        }
+        p {
+            margin-top: 17px;
+            @include p(19px, $text-color, center);
+        }
+    }
+
+    &__list {
+        max-width: 1110px;
+        margin: 0 auto;
+        margin-top: 65px;
+        display: flex;
+        gap: 25px;
+        cursor: pointer;
+
+        &__container {
+          border-radius: 10px;
+            border: 1px solid $white;
+            background-color: $white;
+            max-width: 350px;
+            max-height: 450px;
+            box-shadow: 0px 34px 33px -23px rgba(22, 28, 45, 0.1295);
+            transition: all 0.3s ease;
+            &:hover {
+                border: 1px solid $gray;
+            }
+
+        }
+
+        &__image {
+            background-repeat: no-repeat;
+            background-size: cover;
+            img {
+                border-radius: 10px 10px 0 0;
+            }
+        }
+
+        &__title {
+            padding: 22px 32px;
+
+            p {
+                @include p(15px, $text-color, start);
+            }
+            h6 {
+                margin-top: 10px;
+                font-size: 18px;
+                color: $text-color;
+                letter-spacing: -0.5px;
+                font-weight: 600;
+            }
+        }
+    }
+}
