@@ -743,6 +743,7 @@ body {
   text-align: start;
   opacity: 0.7;
   margin-bottom: 10px;
+  opacity: 0.4;
 }
 .footer__social__item a {
   text-decoration: none;

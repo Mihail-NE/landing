@@ -97,6 +97,8 @@
             p {
                 @include p(15px, $white, start);
                 margin-bottom: 10px;
+                opacity: 0.4;
+
             }
             a {
                 text-decoration: none;
