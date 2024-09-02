@@ -47,6 +47,10 @@
             border: none;
             border-radius: 10px;
             cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover {
+                background-color: $blue-hover;
+            }
         }
         p {
             @include p(15px, $text-color, center);
@@ -85,6 +89,15 @@
         display: flex;
         gap: 10px;
 
+        i {
+            size: 18px;
+            color: $secondary-gray;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover {
+                color: $green;
+            }
+        }
     }
 
     &__social {
@@ -98,7 +111,6 @@
                 @include p(15px, $white, start);
                 margin-bottom: 10px;
                 opacity: 0.4;
-
             }
             a {
                 text-decoration: none;

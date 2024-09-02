@@ -26,11 +26,12 @@
     }
     &__btn {
         display: flex;
-        gap: 5px;
-        align-items: center76;
+        gap: 2px;
+        align-items: center;
         transition: all 0.3s ease;
-        &:hover &__icon {
+        &:hover i {
             transform: translate(5px);
+            color: $green;
         }
 
         button {
@@ -45,10 +46,16 @@
                 color: $green;
             }
         }
-        &__icon {
-            cursor: pointer;
+
+        i {
+            size: 10px;
+            color: $white;
             transition: all 0.3s ease;
+            &:hover {
+                color: $green;
+            }
         }
+
     }
     &__list {
         display: inline-grid;
