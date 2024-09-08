@@ -81,14 +81,14 @@
                 }
                 &::before {
                     position: absolute;
-                    content: url(/assets/icons/Oval.svg);
+                    content: url("./assets/icons/Oval.svg");
                     top: 39px;
                     left: 280px;
                     transition: all 0.3s ease;
                 }
                 &::after {
                     position: absolute;
-                    content: url(/assets/icons/tail-right-black.svg);
+                    content: url("./assets/icons/tail-right-black.svg");
                     top: 50px;
                     left: 292px;
                     transition: all 0.3s ease;
