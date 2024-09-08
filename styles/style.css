@@ -82,7 +82,7 @@ body {
   width: auto;
   height: 761px;
   background: rgba(104, 213, 133, 0.1);
-  background: url("../../assets/img/BG.png");
+  background-image: url("/scss/assets/img/BG.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 114px;
@@ -330,14 +330,14 @@ body {
 }
 .category__list__item:hover::before {
   position: absolute;
-  content: url("../../assets/icons/Oval.svg");
+  content: url("/scss/assets/icons/Oval.svg");
   top: 39px;
   left: 280px;
   transition: all 0.3s ease;
 }
 .category__list__item:hover::after {
   position: absolute;
-  content: url("../../assets/icons/tail-right-black.svg");
+  content: url("/scss/assets/icons/tail-right-black.svg");
   top: 50px;
   left: 292px;
   transition: all 0.3s ease;
@@ -436,7 +436,7 @@ body {
 
 .jobs {
   padding-top: 108px;
-  background-image: url("../../assets/img/wave 1(1).png");
+  background-image: url("/scss/assets/img/wave 1(1).png");
   background-repeat: no-repeat;
   background-size: cover;
 }
