@@ -82,7 +82,7 @@ body {
   width: auto;
   height: 761px;
   background: rgba(104, 213, 133, 0.1);
-  background: url(/assets/img/BG.png);
+  background: url("/assets/img/BG.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 114px;
@@ -436,7 +436,7 @@ body {
 
 .jobs {
   padding-top: 108px;
-  background: url(/assets/img/wave\ 1\(1\).png);
+  background: url("/assets/img/wave 1(1).png");
   background-repeat: no-repeat;
   background-size: cover;
 }
