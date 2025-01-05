@@ -2,7 +2,7 @@
 
 # Демо
 
-Посмотреть демо: [Демо](https://https://mihail-ne.github.io/scss/)
+Посмотреть демо: [Демо](https://mihail-ne.github.io/scss/)
 
 ## Обзор проекта
 
