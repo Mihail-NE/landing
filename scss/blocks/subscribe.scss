@@ -1,11 +1,22 @@
 .subscribe {
     margin: 120px auto;
     max-width: 502px;
+
+    @media (max-width: 1200px) {
+        margin: 80px auto;
+        max-width: 90%;
+    }
+
+    @media (max-width: 768px) {
+        margin: 60px auto;
+    }
+
     &__container {
         display: flex;
         flex-direction: column;
         gap: 40px;
     }
+
     &__icon {
         display: flex;
         justify-content: center;
@@ -14,15 +25,24 @@
     &__title {
         h3 {
             @include h3(36px, $text-color, center);
+
+            @media (max-width: 768px) {
+                font-size: 28px;
+            }
         }
         p {
             @include p(17px, $text-color, center);
             margin-top: 20px;
+
+            @media (max-width: 768px) {
+                font-size: 15px;
+            }
         }
     }
 
     &__form {
         position: relative;
+
         input {
             width: 85%;
             padding: 22px 38px;
@@ -32,7 +52,14 @@
             border: 1px solid $gray;
             border-radius: 10px;
             opacity: 0.7;
+
+            @media (max-width: 768px) {
+                width: 100%;
+                padding: 15px;
+                font-size: 14px;
+            }
         }
+
         button {
             position: absolute;
             left: 327px;
@@ -48,13 +75,26 @@
             border-radius: 10px;
             cursor: pointer;
             transition: all 0.3s ease;
+
             &:hover {
                 background-color: $blue-hover;
             }
+
+            @media (max-width: 768px) {
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 10px 30px;
+                font-size: 15px;
+            }
         }
+
         p {
             @include p(15px, $text-color, center);
             margin-top: 25px;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
         }
     }
 }
@@ -63,24 +103,45 @@
     background-color: $text-color;
     padding-top: 122px;
     padding-bottom: 128px;
+
+    @media (max-width: 1200px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
     &__container {
         display: flex;
         gap: 101px;
         margin: 0 auto;
         width: fit-content;
+
+        @media (max-width: 1200px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
     }
 
     &__info {
         max-width: 274px;
+
         h3 {
             font-family: Rubik, sans-serif;
             font-weight: 600;
             font-size: 28px;
             color: $white;
+
+            @media (max-width: 768px) {
+                font-size: 24px;
+            }
         }
         p {
             @include p(15px, $white, start);
             margin-top: 36px;
+
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
         }
     }
 
@@ -94,6 +155,7 @@
             color: $secondary-gray;
             cursor: pointer;
             transition: all 0.3s ease;
+
             &:hover {
                 color: $green;
             }
@@ -103,14 +165,26 @@
     &__social {
         display: flex;
         gap: 80px;
+
+        @media (max-width: 1200px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
         &__item {
             display: flex;
             flex-direction: column;
             gap: 15px;
+
             p {
                 @include p(15px, $white, start);
                 margin-bottom: 10px;
                 opacity: 0.4;
+
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                }
             }
             a {
                 text-decoration: none;
@@ -118,8 +192,13 @@
                 color: $white;
                 font-weight: 300;
                 transition: all 0.3s ease;
+
                 &:hover {
                     color: $green;
+                }
+
+                @media (max-width: 768px) {
+                    font-size: 14px;
                 }
             }
         }

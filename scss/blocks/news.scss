@@ -2,13 +2,32 @@
     padding-top: 97px;
     background-color: #f4f7fa;
     padding-bottom: 140px;
+
+    @media (max-width: 1200px) {
+        padding-top: 80px;
+        padding-bottom: 100px;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
     &__info {
         h3 {
             @include h3(36px, $text-color, center);
+
+            @media (max-width: 768px) {
+                font-size: 28px;
+            }
         }
         p {
             margin-top: 17px;
             @include p(19px, $text-color, center);
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
         }
     }
 
@@ -20,25 +39,38 @@
         gap: 25px;
         cursor: pointer;
 
+        @media (max-width: 1200px) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
         &__container {
-          border-radius: 10px;
+            border-radius: 10px;
             border: 1px solid $white;
             background-color: $white;
             max-width: 350px;
             max-height: 450px;
             box-shadow: 0px 34px 33px -23px rgba(22, 28, 45, 0.1295);
             transition: all 0.3s ease;
+
+            @media (max-width: 768px) {
+                max-width: 100%;
+                margin-bottom: 20px;
+            }
+
             &:hover {
                 border: 1px solid $gray;
             }
-
         }
 
         &__image {
             background-repeat: no-repeat;
             background-size: cover;
+
             img {
                 border-radius: 10px 10px 0 0;
+                width: 100%; // Убедитесь, что изображение занимает всю ширину контейнера
             }
         }
 
@@ -54,6 +86,10 @@
                 color: $text-color;
                 letter-spacing: -0.5px;
                 font-weight: 600;
+
+                @media (max-width: 768px) {
+                    font-size: 16px;
+                }
             }
         }
     }

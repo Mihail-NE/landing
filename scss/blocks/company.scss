@@ -2,15 +2,64 @@
     margin: 0 auto;
     max-width: 766px;
     margin-bottom: 125px;
+
+    @media (max-width: 1200px) {
+        margin-bottom: 100px;
+        padding: 0 20px;
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 80px;
+    }
+
+    @media (max-width: 576px) {
+        margin-bottom: 60px;
+    }
+
     &__info {
         margin-bottom: 30px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 20px;
+        }
+
         h3 {
             @include h3(36px, $text-color, center);
             margin-bottom: 30px;
+
+            @media (max-width: 1200px) {
+                font-size: 32px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
         }
+
         p {
             @include p(19px, $text-color, center);
             margin-bottom: 60px;
+
+            @media (max-width: 1200px) {
+                font-size: 17px;
+                margin-bottom: 50px;
+            }
+
+            @media (max-width: 768px) {
+                font-size: 16px;
+                margin-bottom: 40px;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 15px;
+                margin-bottom: 30px;
+            }
         }
     }
 }
